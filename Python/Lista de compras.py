@@ -19,7 +19,7 @@ while opções != 1:
         parcelar = str(input('Deseja parcelar sua compra? [S/N]: ')).strip().upper()
         if "S" in parcelar:
             vezesParcela = int(input('Em quentas vezes deseja parcelar? '))
-            print(f'A compra de {contPreço} parcelada em {vezesParcela}x ficará por R${contPreço / vezesParcela:.2f}')
+            print(f'A compra de R${contPreço:.2f} parcelada em {vezesParcela}x ficará por R${contPreço / vezesParcela:.2f}')
         continuar1 = str(input('Deseja continuar comprando? [S/N]: ')).strip().upper()
         if "N" in continuar1:
             break
@@ -33,3 +33,7 @@ while opções != 1:
         continuar2 = str(input('Deseja continuar comprando? [S/N]: ')).strip().upper()
         if "N" in continuar2:
             break
+parcelar = str(input('Deseja parcelar sua compra? [S/N]: ')).strip().upper()
+if "S" in parcelar:
+    vezesParcela = int(input('Em quentas vezes deseja parcelar? '))
+    print(f'A compra de R${contPreço:.2f} parcelada em {vezesParcela}x ficará por R${contPreço / vezesParcela:.2f}')
